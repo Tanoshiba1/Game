@@ -1,0 +1,190 @@
+Text that appears outside of the block tags
+will not display in the credits scene
+
+<block:-2,-2,10,10,offbot,center,Castle - Cloudy Night (Title)>
+CREDITS - ENVIRONMENT SYSTEM PRO v2.0
+
+
+\c[2]EVENT BASED SYSTEMS
+
+\c[4]CoopNinjask
+Time
+Rain
+Day and Night
+Sunlight & Moonlight (Requires mv3d-patreon.js)
+Camera Routines
+Flashlight
+Clock HUD
+Dynamic BGM
+Smooth Transitions
+Day and Night in Battle Integration
+Weather in Battle Integration
+HUD Adjustment Menu
+Dynamic Camera
+First Person Camera Easy Setup
+Sprite Animations
+
+
+\c[2]PLUGINS
+
+\c[4]biud436
+RS_MessageAlign
+
+\c[4]Dan "Liquidize" Deptula
+MadeWithMV
+
+\c[4]DrDhoom
+DhoomParallaxUtils
+DhoomTitleExitCommand
+
+\c[4]Dread_Nyanak
+MV3D - 3D rendering for RMMV
+
+\c[4]Fallen Angel Olivia
+Olivia_AntiPlayerStress
+
+\c[4]Galv
+GALV_RollCredits
+
+\c[4]Krimer
+Fullscreen_Options
+
+\c[4]Moghunter
+MOG_BattlebackEX
+MOG_EnemyHP
+
+\c[4]Mokusei Penguin
+MPP_AnimationScale
+
+\c[4]SumRndmDde
+SRD_GameUpgrade
+SRD_WindowUpgrade
+SRD_GameUpgrade
+SRD_WindowUpgrade
+SRD_OptionsUpgrade
+SRD_OptionsCreator
+SRD_MasterVolume
+
+\c[4]Tsukihime
+HIME_BattleWeather
+
+\c[4]Yami
+Yami_SkipTitle
+
+\c[4]Yanfly
+Core Engine
+Core Updates and Desktop Optimization
+Main Menu Manager
+Message Core
+Save Core
+Battle Engine Core
+Action Sequence Pack 1
+Action Sequence Pack 2
+Action Sequence Pack 3
+Animated Sideview Battlers
+Battle System - ATB
+Battle System - CTB
+Battle System - STB
+Battle A.I. Core
+Buffs & States Core
+Element Core
+Level Up Growth Effects
+Victory Aftermath
+Item Core
+Item Upgrade Slots
+Skill Core
+Skill Cooldowns
+Equip Core
+Auto Passive States
+Base Troop Events
+Region Events
+Region Restrictions
+Save Event Locations
+Event Chase Player
+Move Route Core
+Extended Move Pack 1
+Quest Journal System
+Animated Tile Option
+FPS Synch Option
+Keyboard Config
+Patch Notes
+Picture Spritesheets
+Script Call - Plugin Commands
+Dragonbones Integration
+Gamepad Config
+
+\c[4]Zalerinian
+Gamefocus
+
+
+\c[2]GRAPHICS
+
+Albertov
+Alphanuts
+AvatarOfEnkidu
+Avery
+ByBibo
+Candacis
+Caz
+Chalkdust
+CoopNinjask
+Ddtanan
+Dollmage
+Dread_Nyanak
+Eliaquim
+Enterbrain
+Etanara
+FayForest
+Galactic God
+Green Raven
+Hian
+Hiddenone
+iLurota
+Jonenglish91
+Kholdy
+LordSquirrel
+Moghunter
+Naramura
+Ninjaconor
+Persomatey
+RavenBlackbird
+Rpg-kj
+SanZhang
+ShutterStock
+Sithjester
+Starbird
+Tale
+TheStoryteller01
+Tktkvip
+Tonbi@Tobishima-Factory
+Vibrato (http://p3x774.web.fc2.com/)
+Violet Mist
+Volpi
+Zealraid
+え～す。
+無量光秀
+
+
+\c[2]TALL CHARACTERS GENERATOR
+
+Anyone
+Schlangan
+WaywardMartian
+
+
+\c[2]AUDIO
+
+CoopNinjask
+DeadᅳA
+Enterbrain
+North Sound
+Sounds Resource
+
+
+\c[3]ALL RESOURCES INCLUDED IN THIS DEMO THAT WERE NOT CITED
+\c[3]IN THE ABOVE LIST BELONG TO DEGICA AND KADOKAWA CORPORATION,
+\c[3]AS PART OF THE STANDARD PACKAGE OF RPG MAKER MV.
+
+
+\c[10]THANKS FOR YOUR SUPPORT!
+\c[12]LET'S MAKE GREAT GAMES!

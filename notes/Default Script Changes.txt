@@ -1,0 +1,152 @@
+Default Script Changes
+
+
+rpg_core.js (KeyMapper changes)
+
+
+Line 3016 (Replaced)
+
+45: 'escape',   // insert
+
+by
+
+35: 'escape',   // insert
+
+
+Line 3017 (Add)
+
+36: 'rotright', // home
+
+
+Line 3018 (Add)
+
+45: 'rotleft',  // insert
+
+
+Line 3019 (Add)
+
+46: 'ok',       // del
+
+
+Line 3020 (Ignored)
+
+//81: 'pageup',   // Q
+
+
+Line 3021 (Ignored)
+
+//87: 'pagedown', // W
+
+-------------------------------
+
+rpg_objects.js
+
+
+Line 7483 (Add)
+
+$gameSwitches.setValue(7, true)
+
+-------------------------------
+
+rpg_scenes.js
+
+
+Line 801 (Add)
+
+$gameSwitches.setValue(91,true)
+
+
+Line 838 (Add)
+
+$gameSwitches.setValue(73, false);
+
+
+Line 844 (Erased)
+
+AudioManager.stopBgs();
+
+
+Lines 848, 849 and 850 (Add)
+
+BattleManager.playBattleBgm = function() {
+    AudioManager.playBgm($gameSystem.battleBgm());
+};
+
+-------------------------------
+
+rpg_sprites.js
+
+
+Line 653 (Replaced)
+
+guard:    { index: 3,  loop: true },
+
+by
+
+guard:    { index: 3,  loop: false },
+
+
+Line 667 (Replaced)
+
+dead:     { index: 17, loop: true  }
+
+by
+
+dead:     { index: 17, loop: false }
+
+-------------------------------
+
+rpg_windows.js
+
+
+Line 2743 to 2745 (Add)
+
+if (value > 100) {
+   value = 0;
+}
+
+
+Line 2759 to 2761 (Add)
+
+if (value > 100) {
+   value = 0;
+}
+
+
+Line 2770 (Replaced) [volumeOffset]
+
+return 20;
+
+by
+
+return 5;
+
+
+Line 4673 (Ignored)
+
+Window_Base.prototype.initialize.call(this, 0, 0, wight, height);
+
+
+Lines 4674 to 4694 (Added)
+
+if ($gameVariables.value(82) == 1) {
+   wx = (Graphics.width - wight) / 2;
+   wy = (Graphics.height - height) / 8;
+}
+else {
+   if ($gameVariables.value(82) == 2) {
+   	wx = (Graphics.width - wight) / 2;
+   	wy = (Graphics.height - height) / 1.8;
+   }
+   else {
+   	if ($gameVariables.value(82) == 3) {
+   		wx = (Graphics.width - wight) / 2;
+   		wy = (Graphics.height - height) / 1.15;
+   	}
+   	else {
+   		wx = (Graphics.width - wight) / 2;
+    		wy = (Graphics.height - height) / 8;
+    	}
+    }
+}
+Window_Base.prototype.initialize.call(this, wx, wy, wight, height);

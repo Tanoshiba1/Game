@@ -1,0 +1,487 @@
+@param options
+@text Option Settings
+
+@param 3dMenu
+@text 3D Options Menu
+@desc Whether 3D options will be in a submenu, regular options menu, or disabled.
+@parent options
+@type Select
+@option SUBMENU
+@option ENABLE
+@option DISABLE
+@default ENABLE
+
+
+@param renderDistOptionName
+@text Render Distance Option Name
+@desc symbol name: mv3d-renderDist
+@parent options
+@type Text
+@default Render Distance
+
+@param renderDist
+@text Render Distance Default
+@desc The maximum distance that can be rendered by the camera.
+@parent renderDistOptionName
+@type Number
+@default 25
+@min 0
+
+@param renderDistOption
+@text Render Distance Option
+@desc Should Render Distance appear on options menu?
+@parent renderDistOptionName
+@type Boolean
+@default true
+
+@param renderDistMin
+@text Render Distance Min
+@parent renderDistOptionName
+@type Number
+@default 10
+@min 0
+
+@param renderDistMax
+@text Render Distance Max
+@parent renderDistOptionName
+@type Number
+@default 100
+@min 0
+
+
+#param mipmapOptionName
+#text Mipmapping Option Name
+#desc symbol name: mv3d-mipmap
+#parent options
+#type Text
+#default Mipmapping
+
+#param mipmap
+#text Mipmapping Default
+#parent mipmapOptionName
+#type Boolean
+#default false
+
+#param mipmapOption
+#text Mipmapping Option
+#desc Should Mipmapping appear on options menu?
+#parent mipmapOptionName
+#type Boolean
+#default true
+
+
+@param fovOptionName
+@text FOV Option Name
+@desc symbol name: mv3d-fov
+@parent options
+@type Text
+@default FOV
+
+@param fov
+@text FOV Default
+@parent fovOptionName
+@type Number
+@default 65
+@min 0 @max 180
+
+@param fovOption
+@text FOV Option
+@desc Should FOV appear on options menu?
+@parent fovOptionName
+@type Boolean
+@default false
+
+@param fovMin
+@text FOV Min
+@parent fovOptionName
+@type Number
+@default 50
+@min 0 @max 180
+
+@param fovMax
+@text FOV Max
+@parent fovOptionName
+@type Number
+@default 100
+@min 0 @max 180
+
+@param spacer|graphics @text‏‏‎ ‎@desc ===============================================
+
+@param graphics
+@text Graphics
+
+@param antialiasing
+@text Antialiasing
+@parent graphics
+@type Boolean
+@default true
+
+@param edgefix
+@text Edge Fix
+@desc Fixes rendering issues at the edges of tiles.
+@parent graphics
+@type Number
+@decimals 1
+@default 0.5
+
+@param alphatest
+@text Alpha Cutoff
+@desc Pixels with alpha below this value will not be rendered.
+@parent graphics
+@type Number
+@decimals 2
+@min 0.01 @max 1
+@default 0.51
+
+@param lightLimit
+@text Lights Per Mesh
+@parent graphics
+@type Number
+@min 4
+@default 8
+
+@param backfaceCulling
+@text Backface Culling
+@parent graphics
+@type Boolean
+@default true
+
+@param cameraCollision
+@text Camera Collision
+@parent graphics
+@type Combo
+@option Off
+@option Type1
+@option Type2
+@option Type1 Smoothed
+@option Type2 Smoothed
+@default Type2 Smoothed
+
+@param resScale
+@text Resolution Scale
+@desc Scale the resolution
+@parent graphics
+@type Number
+@decimals 2
+@min 0 @max 1
+@default 1
+
+@param spacer|map @text‏‏‎ ‎@desc ===============================================
+
+@param map
+@text Map Settings
+
+@param cellSize
+@text Cell Size
+@desc The size of the chunks the map is divided into.
+@parent map
+@type Number
+@default 10
+
+@param unloadCells
+@text Unload Far Cells
+@desc Unload cells outside the render distance.
+@parent map
+@type Boolean
+@default false
+
+@param eventsUpdateNear
+@text Update All Events in Render Distance
+@parent map
+@type Boolean
+@default true
+
+@param mapDefaults
+@text Map Defaults
+@parent map
+@type Note
+@default
+"enable(true)\nsun(white)\nambient(default)\nfog(black|20,30)\nceiling(backface:true)"
+
+
+@param spacer|input @text‏‏‎ ‎@desc ===============================================
+
+@param input
+@text Input & Gameplay
+
+@param WASD
+@text WASD
+@parent input
+@type Boolean
+@default true
+
+@param dir8Movement
+@text Diagonal Movement
+@desc In smart mode, when diagonal movement fails, try moving straight.
+@parent input
+@type Combo
+@option Off
+@option Diagonal Basic
+@option Diagonal Basic 3D Only
+@option Diagonal Smart
+@option Diagonal Smart 3D Only
+@default Diagonal Smart
+
+@param keyboardPitch
+@text Control Pitch
+@parent input
+@desc Allow player to change pitch with pageup & pagedown.
+@type Boolean
+@default true
+
+@param keyboardTurn
+@text Allow Turning
+@parent input
+@desc Allows rotating camera with keyboard in 3rd person. Rotating is always allowed in 1st person.
+@type Select
+@option Turn with Q+E (requires WASD) @value QE
+@option Turn with A+D and left+right @value AD
+@option disabled
+@default QE
+
+@param keyboardStrafe
+@text Allow Strafing
+@parent input
+@desc Allows strafing in 1st person mode.
+@type Select
+@option Strafe with Q+E (requires WASD) @value QE
+@option Strafe with A+D and left+right @value AD
+@option disabled
+@default QE
+
+@param turnIncrement
+@text Turn Increment
+@parent input
+@desc How many degrees the camera will turn when you press the turn button. Other numbers may also be entered.
+@type Combo
+@option 90
+@option 45
+@option SMOOTH
+@default 90
+
+@param yawSpeed
+@text Turn Speed
+@parent input
+@desc Speed when turning with keyboard (in degrees per second).
+@type Number
+@default 180
+
+@param pitchSpeed
+@text Pitch Speed
+@parent input
+@desc Speed when changing pitch with keyboard (in degrees per second).
+@type Number
+@default 90
+
+
+@param stairThresh
+@text Stair Threshold
+@desc If the distance in height between two tiles is less than this, they will be passable.
+@parent input
+@type Number
+@decimals 2
+@default 0.1
+
+@param walkOffEdge
+@text Walk off Edge
+@parent input
+@type Boolean
+@default false
+
+@param walkOnEvents
+@text Walk on Events
+@parent input
+@type Boolean
+@default true
+
+@param gravity
+@text Gravity
+@desc The speed characters will fall, in tiles per second.
+@parent input
+@type Number
+@decimals 2
+@default 8
+
+@param spacer|tileconfig @text‏‏‎ ‎@desc ===============================================
+
+@param tileconfig
+@text Tile Config
+
+@param wallHeight
+@text Wall Height
+@desc The default height for wall tiles
+@parent tileconfig
+@type Number
+@min -9999 @max 9999
+@decimals 1
+@default 2.0
+
+@param tableHeight
+@text Table Height
+@desc The default height for table tiles
+@parent tileconfig
+@type Number
+@min -9999 @max 9999
+@decimals 2
+@default 0.33
+
+@param fringeHeight
+@text Fringe Height
+@parent tileconfig
+@type Number
+@min -9999 @max 9999
+@decimals 1
+@default 2.0
+
+@param ceilingHeight
+@text Ceiling Height
+@desc Default height of ceiling for maps with ceiling enabled.
+@parent tileconfig
+@type Number
+@min -9999 @max 9999
+@decimals 1
+@default 2.0
+
+@param layerDist
+@text Layering Distance
+@desc The distance between tile layers. If this is too small
+there may be z-fighting issues. (default: 0.0100)
+@parent tileconfig
+@type Number
+@decimals 4
+@default 0.0100
+
+@param animDelay
+@text Animation Speed
+@desc The number of milliseconds between each frame in tile animations.
+@parent tileconfig
+@type Number
+@default 333
+
+@param regions
+@text Regions
+@desc use regions to determine tile height.
+@parent tileconfig
+@type struct<RegionHeight>[]
+@default ["{\"regionId\":\"1\",\"conf\":\"height(1)\"}","{\"regionId\":\"2\",\"conf\":\"height(2)\"}","{\"regionId\":\"3\",\"conf\":\"height(3)\"}","{\"regionId\":\"4\",\"conf\":\"height(4)\"}","{\"regionId\":\"5\",\"conf\":\"height(5)\"}","{\"regionId\":\"6\",\"conf\":\"height(6)\"}","{\"regionId\":\"7\",\"conf\":\"height(7)\"}"]
+
+@param ttags
+@text Terrain Tags
+@desc use terrain tags to determine tile height.
+@parent tileconfig
+@type struct<TTagHeight>[]
+@default ["{\"terrainTag\":\"1\",\"conf\":\"shape(xcross),height(1),fringe(0)\"}","{\"terrainTag\":\"2\",\"conf\":\"shape(fence),height(1)\"}"]
+
+@param spacer|characters @text‏‏‎ ‎@desc ===============================================
+
+@param characters
+@text Characters
+
+@param heightTrigger
+@text Event Trigger Height
+@desc If true, events will need to be at the same elevation as the player to be triggered.
+@parent characters
+@type Boolean
+@default true
+
+@param eventCharDefaults
+@text Character Event Settings
+@parent characters
+@type Note
+@default "shadow(0.8,4)\nshape(sprite)\nscale(1)"
+
+@param eventObjDefaults
+@text Object Event Settings
+@parent characters
+@type Note
+@default "shadow(0)\nshape(sprite)\nscale(1)"
+
+@param eventTileDefaults
+@text Tile Event Settings
+@parent characters
+@type Note
+@default "shadow(0)\nshape(flat)\nscale(1)"
+
+@param eventHeight
+@text Event "Above Characters" Default Height
+@parent characters
+@type Number
+@decimals 1
+@default 2.0
+
+@param boatSettings
+@text Boat Settings
+@parent characters
+@type struct<BoatStruct>
+@default {"conf":"shadow(0.8,4),shape(sprite),scale(1),bush(false)"}
+
+@param shipSettings
+@text Ship Settings
+@parent characters
+@type struct<BoatStruct>
+@default {"conf":"shadow(0.8,4),shape(sprite),scale(1),bush(false)"}
+
+@param airshipSettings
+@text Airship Settings
+@parent characters
+@type struct<AirshipStruct>
+@default {"conf":"shadow(1,6),shape(sprite),scale(1),bush(false)","height":"2.0","bushLanding":"false"}
+
+@param allowGlide
+@text Allow Glide
+@desc If true, collision detection for flying characters will use only current elevation and not target elevation.
+@parent characters
+@type Boolean
+@default true
+
+@param spriteOffset
+@text Sprite Offset
+@parent characters
+@type Number
+@min 0 @max 1
+@decimals 2
+@default 0.9
+
+@param spacer|assets @text‏‏‎ ‎@desc ===============================================
+
+@param assets
+@text Assets
+
+@param diagSymbol
+@text Diagonal Sprite Symbol
+@desc Character sheets with this symbol contain diagonal sprites. Leave blank to use diagonal sprites with all images.
+@parent assets
+@type Text
+@default {d}
+
+@param shadowTexture
+@text Shadow Texture
+@parent assets
+@type file
+@dir img/MV3D
+@require 1
+@default shadow
+
+@param alphaMask
+@text Bush Alpha Texture
+@parent assets
+@type file
+@dir img/MV3D
+@require 1
+@default bushAlpha
+
+@param errorTexture
+@text Error Texture
+@parent assets
+@type file
+@dir img/MV3D
+@require 1
+@default errorTexture
+
+@param requiredImages
+@text Other Required Images
+@desc Specify additional images here to prevent them from being excluded during deployment.
+@parent assets
+@type file[]
+@dir img/MV3D
+@require 1

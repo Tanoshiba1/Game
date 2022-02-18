@@ -1,0 +1,1 @@
+Scene_Title.prototype = Object.create(Scene_Map.prototype);

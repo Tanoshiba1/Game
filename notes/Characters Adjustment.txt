@@ -1,0 +1,29 @@
+Characters Adjustment
+
+
+Nakamura
+
+<mv3d>
+scale(1.3)
+</mv3d>
+
+
+Sithjester
+
+<mv3d>
+scale(0.68)
+</mv3d>
+
+
+Vibrato
+
+<mv3d>
+scale(0.9)
+</mv3d>
+
+
+Vibrato (Ace Heroes)
+
+<mv3d>
+scale(1.35)
+</mv3d>

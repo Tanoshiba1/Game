@@ -1,0 +1,29 @@
+Don't Use & Don't Change
+
+
+=> Don't use fade in / fade out effects, except those of the transfer map.
+
+=> Don't change any file names in folders.
+
+=> Don't change any settings in the DhoomParallaxUtils plugin.
+
+=> Do not use pictures number 1 to 8.
+
+=> Copy and paste the following parallax names into the note tags on your outdoor maps: (KEEP THE NAMES IN THIS EXACT WAY, IN PORTUGUESE!!!)
+
+<parallax: Noite Nublado, CloudySky5>
+<parallax: Tarde Nublado, CloudySky4>
+<parallax: Dia Nublado, CloudySky3>
+<parallax: Noite, StarlitSky2>
+<parallax: Tarde, Sunset>
+<parallax: Dia, BlueSky>
+
+
+Switches
+
+Don't use any switches until number 76, except number 74.
+
+
+Variables
+
+Don't use any variables until number 63.

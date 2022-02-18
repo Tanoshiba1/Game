@@ -1,0 +1,32 @@
+Day and Night Fog Colors
+
+
+Day
+
+#e1feff
+
+
+Afternoon
+
+#ffa356
+
+
+Night
+
+black
+
+
+Cloudy Day
+
+#81878a
+
+
+Cloudy Afternoon
+
+#71321e
+
+
+Cloudy Night
+
+black
+
